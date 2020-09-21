@@ -4,18 +4,22 @@ window.onload = function () {
     // declare variables
     var choices = ['r', 'p', 's']
     var wins = 0;
-    var loses = 0;
+    var losses = 0;
     var ties = 0;
 
     // reference elements ids
     var userText = document.getElementById('userText')
     var computerText = document.getElementById('computerText')
+    var resultsText = document.getElementById('resultsText')
     var winsText = document.getElementById('winsText')
     var lossesText = document.getElementById('lossesText')
     var tiesText = document.getElementById('tiesText')
 
-    $(".resultsDiv").hide()
+    $(".choicesDiv").hide()
 
+    $(".rockIcon").click(function () {
+        $(".startDiv").animate()
+    })
     // create event listener evertime keyboard up detected
     document.onkeyup = function (e) {
 
@@ -36,25 +40,27 @@ window.onload = function () {
                 (random === 'r' && userInput === 's') ||
                 (random === 's' && userInput === 'p') ||
                 (random === 'p' && userInput === 'r')) {
-                alert('You Lost!')
-                loses++
+                losses++
+                resultsText.textContent = "You Lose!"
             }
             else if (random === userInput) {
-                alert('Tie!')
                 ties++
+                resultsText.textContent = "Tie!"
+
             } else {
-                alert('You Won!')
                 wins++
+                resultsText.textContent = "You're a Winner!"
+
             }
 
             $(".startDiv").hide()
-            $(".resultsDiv").show()
+            $(".choicesDiv").show()
 
             // update browser with game results
             userText.textContent = 'Your Choice: ' + userInput;
             computerText.textContent = "Computer's Choice: " + random;
             winsText.textContent = 'Wins: ' + wins;
-            lossesText.textContent = 'Loses: ' + loses;
+            lossesText.textContent = 'Losses: ' + losses;
             tiesText.textContent = 'Ties: ' + ties;
         }
     }

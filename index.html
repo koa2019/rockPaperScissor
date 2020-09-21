@@ -25,114 +25,130 @@
 
     <div class='container'>
 
-        <div class="jumbotron-fluid text-center mt-3">
+        <div class="jumbotron text-center mt-3">
             <div class="head">
                 <h1>Let's Play Rock, Paper, Scissors!</h1>
-                <!-- <p>To Start Game type r, p or s</p> -->
+                <p>To Start Game type r, p or s</p>
             </div>
         </div>
 
-        <div class='row'>
-            <div class='col'>
-                <p id='userText'></p>
-                <p id='computerText'></p>
-            </div>
-            <div class='col'>
-                <p id='winsText'></p>
-                <p id='lossesText'></p>
-                <p id='tiesText'></p>
-            </div>
-        </div>
-
-        
         <div class="row mt-5">
             <div class="col">
                 <h5>You</h5>
             </div>
-            
+
             <div class="col text-right">
                 <h5>The Computer</h5>
             </div>
         </div>
 
+        <!-- starting rocks div -->
         <div class='row startDiv'>
             <div class="col ">
+
                 <div class="card-deck">
-                    <div class="card">
-                        <!-- <div class="col text-center">
-                            <h2>You</h2>
-                        </div> -->
+                    <div class="card startImgLeft">
+
                         <img src="./assets/images/leftFist.png" class="card-img-top arms" alt="rock fist">
+
                     </div>
 
-                    <div class="card text-center">
-                        <h2>vs</h2>
+                    <div class="text-center">
+                        <h2>VS</h2>
                     </div>
 
-                    <div class="card mt-4">
-                        <!-- <div class="col text-center">
-                            <h2>The Computer</h2>
-                        </div> -->
+                    <div class="card startImgRight mt-4">
+
                         <img src="./assets/images/rightRock.png" class="card-img-top arms" alt="rock_fist">
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row resultsDiv">
+        <!-- players choices div  -->
+        <div class="row choicesDiv">
             <div class="col ">
-
                 <div class="card-deck">
+
+                    <!-- user's choice -->
                     <div class="card">
-                        <img src="./assets/images/leftScissor.png" class="card-img-top arms" alt="computer choice">
+
+                        <img src="./assets/images/leftScissor.png" class="card-img-top arms" alt="user's choice">
+
+                        <p class="text-center choiceText" id='userText'></p>
                     </div>
 
                     <div class="card text-center">
-                        <h2>vs</h2>
+                        <h2>VS</h2>
+                        <div class="card-body">
+                            <p class="text-center results" id='resultsText'></p>
+                        </div>
                     </div>
+
+                    <!-- computer's choice -->
                     <div class="card mt-4">
-                        <img src="./assets/images/rightPaper.png" class="card-img-top arms" alt="user choice">
-                    </div>
-                </div>
-                <!-- <div class="card-deck">
-                    <div class="card">
-                        <img src="./assets/images/leftScissor.png" class="card-img-top arms" alt="computer choice">
-                    </div>
 
-                    <div class="card mt-4">
-                        <img src="./assets/images/rightPaper.png" class="card-img-top arms" alt="user choice">
-                    </div>
-                </div> -->
-            </div>
-        </div>
+                        <img src="./assets/images/rightPaper.png" class="card-img-top arms" alt="computer's choice">
 
-        <!-- <div class="row mb-5">
-            <div class="col text-center">
-                <h2>You</h2>
-            </div>
-            <div class="col text-center">
-                <h2>vs</h2>
-            </div>
-            <div class="col text-center">
-                <h2>The Computer</h2>
-            </div>
-        </div> -->
+                        <p class="text-center choiceText" id='computerText'></p>
 
-        <div class='row mt-4'>
-            <div class='col'>
-                <div class="card-group iconCards" id='choices'>
-                    <div class="card ">
-                        <img src="./assets/images/rockIcon2.png" class="card-img-top" value="r" alt="rock icon">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/paperIcon2.png" class="card-img-top" value="p" alt="paper icon">
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/scissorsIcon2.png" class="card-img-top" value="s" alt="scissor icon">
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- icon buttons div -->
+        <div class='row mt-1'>
+            <div class='col '>
+
+                <button class="iconCards">
+                    <img src="./assets/images/rockIcon2.png" class="card-img-top rockIcon buttonIcon" value="r"
+                        alt="rock icon">
+                </button>
+
+                <button class="iconCards">
+                    <img src="./assets/images/paperIcon2.png" class="card-img-top buttonIcon" value="p"
+                        alt="paper icon">
+                </button>
+
+                <button class="iconCards">
+                    <img src="./assets/images/scissorsIcon2.png" class="card-img-top buttonIcon" value="s"
+                        alt="scissor icon">
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- button div -->
+    <!-- <div class='row mt-4'>
+        <div class='col '>
+            <button class="button rockButton">Rock</button>
+        </div>
+        <div class="col">
+            <button class="button paperButton">Paper</button>
+        </div>
+        <div class="col">
+            <button class="button scissorButton">Scissor</button>
+        </div>
+    </div> -->
+
+    <div class='row resultsDiv'>
+
+        <div class='col'>
+            <p id='winsText'></p>
+        </div>
+
+        <div class='col'>
+            <p id='lossesText'></p>
+        </div>
+
+        <div class='col'>
+            <p id='tiesText'></p>
+        </div>
+
+    </div>
 
     </div>
 </body>

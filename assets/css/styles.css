@@ -6,9 +6,18 @@ body{
 h1 {
     font-size: 48px;
 }
+
 h2 {
     font-size: 26px;
 }
+.choiceText {
+    font-size: medium;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
 .card {
     background-color: black;
 }
@@ -17,25 +26,73 @@ h2 {
     width: 60%;
     height: 250px;
 }
-.iconCards img {
+
+.iconCards {
+    margin-left: 150px;
+    background-color: black;
+    border: none;
+}
+
+.results {
+    margin-top: 60px;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+
+/* buttons styles */
+.buttonIcon {
+    width: 150px;
     height: 150px;
 }
 
-/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
-img:hover {
-    animation: shake 3s;
+.button {
+    border: solid;
+    border-style: solid;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 50%;
+    margin: 10px 0 0 150px;
 }
 
+.rockButton {
+    background-color: #4CAF50;
+    border-color:  #82fd86;
+}
+
+.paperButton {
+    background-color: #1fb8ff;
+    border-color: #70d1fd;
+}
+
+.scissorButton {
+    background-color: #f120cf;
+    border-color: #fd84e9;
+}
+
+/* resultsDiv styles */
+.resultsDiv{
+    margin: 2em 0 0 5em;
+    font-size: xx-large;
+}
+
+
+/* rock fists animations */
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+.startImgLeft:hover {
+    animation: shake 1s;
+}
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(50deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(50deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(50deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(50deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+    0% { transform: rotateZ(315deg); }   
+}
+
+.startImgRight:hover {
+    animation: shake 1s;
+}
+@keyframes shake {
+    0% { transform: rotateZ(20deg); }
+}
