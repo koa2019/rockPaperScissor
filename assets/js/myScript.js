@@ -14,7 +14,8 @@ window.onload = function () {
     var lossesText = document.getElementById('lossesText')
     var tiesText = document.getElementById('tiesText')
 
-
+    $(".startDiv").show()
+    $(".resultsDiv").hide()
 
     // create event listener evertime keyboard up detected
     document.onkeyup = function (e) {
@@ -46,6 +47,9 @@ window.onload = function () {
                 alert('You Won!')
                 wins++
             }
+
+            $(".startDiv").hide()
+            $(".resultsDiv").show()
 
             // update browser with game results
             userText.textContent = 'Your Choice: ' + userInput;
