@@ -25,10 +25,10 @@
 
     <div class='container'>
 
-        <div class="jumbotron-fluid text-center mt-5">
+        <div class="jumbotron-fluid text-center mt-3">
             <div class="head">
                 <h1>Let's Play Rock, Paper, Scissors!</h1>
-                <p>To Start Game type r, p or s</p>
+                <!-- <p>To Start Game type r, p or s</p> -->
             </div>
         </div>
 
@@ -44,14 +44,35 @@
             </div>
         </div>
 
+        
+        <div class="row mt-5">
+            <div class="col">
+                <h5>You</h5>
+            </div>
+            
+            <div class="col text-right">
+                <h5>The Computer</h5>
+            </div>
+        </div>
+
         <div class='row startDiv'>
             <div class="col ">
                 <div class="card-deck">
                     <div class="card">
+                        <!-- <div class="col text-center">
+                            <h2>You</h2>
+                        </div> -->
                         <img src="./assets/images/leftFist.png" class="card-img-top arms" alt="rock fist">
                     </div>
 
+                    <div class="card text-center">
+                        <h2>vs</h2>
+                    </div>
+
                     <div class="card mt-4">
+                        <!-- <div class="col text-center">
+                            <h2>The Computer</h2>
+                        </div> -->
                         <img src="./assets/images/rightRock.png" class="card-img-top arms" alt="rock_fist">
                     </div>
                 </div>
@@ -60,7 +81,20 @@
 
         <div class="row resultsDiv">
             <div class="col ">
+
                 <div class="card-deck">
+                    <div class="card">
+                        <img src="./assets/images/leftScissor.png" class="card-img-top arms" alt="computer choice">
+                    </div>
+
+                    <div class="card text-center">
+                        <h2>vs</h2>
+                    </div>
+                    <div class="card mt-4">
+                        <img src="./assets/images/rightPaper.png" class="card-img-top arms" alt="user choice">
+                    </div>
+                </div>
+                <!-- <div class="card-deck">
                     <div class="card">
                         <img src="./assets/images/leftScissor.png" class="card-img-top arms" alt="computer choice">
                     </div>
@@ -68,12 +102,23 @@
                     <div class="card mt-4">
                         <img src="./assets/images/rightPaper.png" class="card-img-top arms" alt="user choice">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
+        <!-- <div class="row mb-5">
+            <div class="col text-center">
+                <h2>You</h2>
+            </div>
+            <div class="col text-center">
+                <h2>vs</h2>
+            </div>
+            <div class="col text-center">
+                <h2>The Computer</h2>
+            </div>
+        </div> -->
 
-        <div class='row'>
+        <div class='row mt-4'>
             <div class='col'>
                 <div class="card-group iconCards" id='choices'>
                     <div class="card ">

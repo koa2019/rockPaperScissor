@@ -14,7 +14,6 @@ window.onload = function () {
     var lossesText = document.getElementById('lossesText')
     var tiesText = document.getElementById('tiesText')
 
-    $(".startDiv").show()
     $(".resultsDiv").hide()
 
     // create event listener evertime keyboard up detected
