@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: rgb(117, 173, 32);
+}
+
+.card {
+    background-color: black;
+}
+
+.arms img {
+    width: 60%;
+    height: 250px;
+}
+.iconCards img {
+    height: 150px;
+}

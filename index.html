@@ -4,36 +4,77 @@
 <head>
     <meta charset="utf-8">
     <title>Rock, Paper, Scissors!</title>
+
+    <!-- jQuery & bootstrap min js-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
+    <!-- bootstap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
+    <link rel='stylesheet' href="./assets/css/styles.css" />
     <script type="text/javascript" src='./assets/js/myScript.js'></script>
 
 </head>
 
 <body>
-    <h1>Let's Play Rock, Paper, Scissors!</h1>
-    <p>To Start Game type r, p or s</p>
 
-    <div id="scores">
-        <p id='userText'></p>
-        <p id='computerText'></p>
-        <p id='winsText'></p>
-        <p id='lossesText'></p>
-        <p id='tiesText'></p>
+    <div class='container'>
+
+        <div class="jumbotron-fluid text-center mt-5">
+            <div class="head">
+                <h1>Let's Play Rock, Paper, Scissors!</h1>
+                <p>To Start Game type r, p or s</p>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col'>
+                <p id='userText'></p>
+                <p id='computerText'></p>
+            </div>
+            <div class='col'>
+                <p id='winsText'></p>
+                <p id='lossesText'></p>
+                <p id='tiesText'></p>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class="col ">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="./assets/images/leftFist.png" class="card-img-top arms" alt="rock fist">
+                    </div>
+
+                    <div class="card mt-4">
+                        <img src="./assets/images/rightRock.png" class="card-img-top arms" alt="rock_fist">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row' >
+            <div class='col'>
+                <div class="card-group iconCards" id='choices'>
+                    <div class="card ">
+                        <img src="./assets/images/rockIcon2.png" class="card-img-top" alt="rock icon">                        
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/paperIcon2.png" class="card-img-top" alt="paper icon">            
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/scissorsIcon2.png" class="card-img-top" alt="scissor icon">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <div id='play'>
-
-    </div>
-
 </body>
 
 </html>
